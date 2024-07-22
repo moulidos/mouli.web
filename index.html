@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Website</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  nav {
+    background-color: #444;
+    text-align: center;
+    padding: 10px 0;
+  }
+  nav a {
+    color: #fff;
+
+    text-decoration: none;
+    padding: 0 15px;
+    cursor: pointer;
+  }
+  .content {
+    padding: 20px;
+  }
+  .slide {
+    display: none;
+  }
+#slogan{
+	
+background-image: url('home back.jpeg');
+font-size:200%;
+}
+#intro{
+     
+font-size:130%;
+}
+#personal{
+      font-size:130%;
+}
+#ug{
+font-size:130%;
+}
+#hr{
+font-size:130%;
+}
+#se{
+font-size:130%;
+}
+#pd{
+font-size:130%;
+}
+#kl{
+font-size:130%;
+}
+#pl{
+font-size:130%;
+}
+#tt{
+font-size:130%;
+}
+#skills{
+font-size:120%;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Welcome to My Website</h1>
+</header>
+
+<nav>
+  <a onclick="showSlide('home')">Home</a>
+  <a onclick="showSlide('personal')">Personal Details</a>
+  <a onclick="showSlide('professional')">Professional Details</a>
+  <a onclick="showSlide('skills')">Skills</a>
+</nav>
+
+<div class="content">
+  <div id="home" class="slide">
+    <h2>Home</h2>
+    <p id="slogan"><b>SUCCESS COMES FROM UNCOMFORTABLE </B></p><br>
+<p id="intro">Hello there! I'm MOULISHWARAN.R, and I'm thrilled to welcome you to my personal corner of the internet. Here, you'll discover a glimpse into my journey—a blend of passions, professional, and personal details. Whether you're here to explore my portfolio, delve into my thoughts on [your field or interests], or simply connect, I'm delighted to have you join me on this digital adventure. Let's explore, create, and grow together.</p>
+
+
+  </div>
+
+  <div id="personal" class="slide">
+    <h2>Personal Details</h2>
+<center>
+<img src="C:\Users\navis\Downloads\mouli img web\mouli photo.jpg" heigth="150" width="200">
+</center>
+    <p id="personal"><b>NAME:</B>MOULISHWARAN.R<BR>
+<b>DNO:</B>22UCS102<BR>
+<b>DOB:</B>15-12-2004<BR>
+<b>AGE:</B>19<BR>
+<b>ADDRESS:</B>2/180,REDDIYAR STREET ,VAIRICHETTIPALAYAM,THURAIYUR (TK),TRICHY(DT).<BR>
+<b>NATIONALITY:</B>INDIAN<BR>
+<b>CONTACT:</B>8838724044<BR>
+<b>email:</B>moulidos@gmail.com<BR>
+
+</p>
+  </div>
+
+  <div id="professional" class="slide">
+    <h2><p  id="pd">Professional Details</p></h2>
+    <p ID="ug">
+<b>UNDERGRADUATION:</B></p>
+ <p> St.Joseph's College(2022-2025)-B.Sc.,Computer Science(8.72%)</p>
+<p ID="hr">
+<b>HIGHER SECONDARY EDUCATION:</B></p>
+ <p> S.V.V.Hr.Sec.School(2021-2022)-Computer Science(552/600)</p>
+<p ID="se">
+<b>SECONDARY EDUCATION:</B></p>
+ <p> S.V.V.Hr.Sec.School(2019-2020)-English(480/500)</p>
+  
+  
+  </div>
+
+  <div id="skills" class="slide">
+    <h2><p id ="skills">Skills</p></h2>
+<p id="kl"><b>KNOWN LANGUAGE:</B></p>
+<P>Tamil,English.</p>
+    <p id="pl"><b>PROGRAMMING LANGUAGE:</B></p>
+<P>C,C++,Python,Java,HTML,Javascript.</p>
+<p id="tt"><b>TOOLS:</B></p>
+<P>Word,Excel,PowerPoint Presentation.</p>
+
+  </div>
+</div>
+
+<script>
+  function showSlide(id) {
+    // Hide all slides
+    var slides = document.querySelectorAll('.slide');
+    slides.forEach(function(slide) {
+      slide.style.display = 'none';
+    });
+
+    // Show the selected slide
+    var selectedSlide = document.getElementById(id);
+    if (selectedSlide) {
+      selectedSlide.style.display = 'block';
+    }
+  }
+
+  // Show Home slide by default
+  showSlide('home');
+</script>
+
+</body>
+</html>
